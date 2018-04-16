@@ -1,4 +1,8 @@
+{% include 'layout.html' %}
+
+{% block content %}
 <h1>{{todos.title}}</h1>
 <p>{{todos.text}}</p>
 <br>
 created on {{todos.created_at}}
+{% endblock %}
