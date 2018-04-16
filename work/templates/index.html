@@ -1,5 +1,18 @@
-<ul>
-	{% for do in todos %}
-		<li>{{do.title}}: {{do.text}} </li>
-	{% endfor %}
-<ul>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<header>
+			<h1> My TodoList </h1>
+			<hr>	
+		</header>
+	<ul>
+		{% for do in todos %}
+			<li><a href="/work/details/{{do.id}}">{{do.title}}</a> : {{do.text}} </li>
+		{% endfor %}
+	</ul>
+	</body>
+</html>
