@@ -1,8 +1,12 @@
 {% include 'layout.html' %}
 
 {% block content %}
+<a href="/work"> <-- Go Back </a>
 <h1>{{todos.title}}</h1>
 <p>{{todos.text}}</p>
 <br>
 created on {{todos.created_at}}
+<br>
+<br>
+<a href="/work/delete/{{todos.id}}">Delete</a>
 {% endblock %}

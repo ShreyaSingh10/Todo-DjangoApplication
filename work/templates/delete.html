@@ -1,0 +1,10 @@
+{% include 'layout.html' %}
+
+{% block content %}
+<form action="{% url 'delete' id %}" method="post">
+{% csrf_token %}
+<input type="submit" value="Submit" />
+</form>
+<a href="/">Go Back</a>
+
+{% endblock %}
