@@ -3,8 +3,9 @@
 {% block content %}
 <form action="{% url 'delete' id %}" method="post">
 {% csrf_token %}
-<input type="submit" value="Submit" />
+<p> Are you sure you want to delete?</p>
+<input type="submit" value="Confirm" class='btn btn-warning'>
 </form>
-<a href="/">Go Back</a>
+<a href='/'><BUTTON>Cancel</BUTTON> </a>
 
 {% endblock %}
